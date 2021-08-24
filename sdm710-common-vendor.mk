@@ -1189,16 +1189,10 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     PowerOffAlarm \
-    QtiTelephonyService \
-    uceShimService \
     WfdService \
-    dpmserviceapp \
-    ims \
-    qcrilmsgtunnel \
     QPerformance \
     UxPerformance \
     WfdCommon \
-    qcrilhook \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti \
     vendor.qti.gnss@4.0-service
