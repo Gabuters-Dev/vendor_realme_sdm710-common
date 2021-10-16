@@ -1056,6 +1056,25 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sdm710-common/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
     vendor/realme/sdm710-common/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 
+# Camera firmware
+PRODUCT_COPY_FILES += \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/aecWarmStartCamera_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_0.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/aecWarmStartCamera_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_1.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/aecWarmStartCamera_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_2.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/aecWarmStartCamera_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_3.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/af_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/af_calibration_s5kgw1_p24c128e_sunny.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/awbWarmStartCamera_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_0.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/awbWarmStartCamera_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_1.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/awbWarmStartCamera_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_2.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/awbWarmStartCamera_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_3.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/mapx.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/mapx.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/mapy.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/mapy.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/pdaf2D_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/pdaf2D_calibration_s5kgw1_p24c128e_sunny.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/pdafdcc_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/pdafdcc_calibration_s5kgw1_p24c128e_sunny.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/sony_imx471_cross_talk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/sony_imx471_cross_talk.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/sony_imx471_dpc_tbl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/sony_imx471_dpc_tbl.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/spc_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/spc_calibration_s5kgw1_p24c128e_sunny.bin
+
 PRODUCT_PACKAGES += \
     libantradio \
     libplatformconfig \
