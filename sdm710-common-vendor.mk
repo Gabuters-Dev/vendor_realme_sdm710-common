@@ -8,7 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/realme/sdm710-common/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
     vendor/realme/sdm710-common/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
-    vendor/realme/sdm710-common/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
     vendor/realme/sdm710-common/proprietary/lib/android.frameworks.fingerprintservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.frameworks.fingerprintservice@1.0.so \
     vendor/realme/sdm710-common/proprietary/lib64/android.frameworks.fingerprintservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.frameworks.fingerprintservice@1.0.so \
     vendor/realme/sdm710-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
@@ -16,10 +15,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sdm710-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
     vendor/realme/sdm710-common/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qcrilhook.xml \
     vendor/realme/sdm710-common/proprietary/product/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephonyservice.xml \
-    vendor/realme/sdm710-common/proprietary/product/framework/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/QtiTelephonyServicelibrary.jar \
-    vendor/realme/sdm710-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
-    vendor/realme/sdm710-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
-    vendor/realme/sdm710-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
     vendor/realme/sdm710-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/realme/sdm710-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/realme/sdm710-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.1.so \
@@ -75,10 +70,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sdm710-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/realme/sdm710-common/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/realme/sdm710-common/proprietary/system_ext/etc/seccomp_policy/perfservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/perfservice.policy \
-    vendor/realme/sdm710-common/proprietary/system_ext/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.qti.dpmframework.jar \
-    vendor/realme/sdm710-common/proprietary/system_ext/framework/dpmapi.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/dpmapi.jar \
-    vendor/realme/sdm710-common/proprietary/system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
-    vendor/realme/sdm710-common/proprietary/system_ext/framework/vendor.qti.latency-V2.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.latency-V2.0-java.jar \
     vendor/realme/sdm710-common/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/realme/sdm710-common/proprietary/system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/realme/sdm710-common/proprietary/system_ext/lib/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/extractors/libmmparserextractor.so \
@@ -253,6 +244,22 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sdm710-common/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile5.xml \
     vendor/realme/sdm710-common/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
     vendor/realme/sdm710-common/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/aecWarmStartCamera_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_0.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/aecWarmStartCamera_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_1.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/aecWarmStartCamera_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_2.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/aecWarmStartCamera_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_3.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/af_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/af_calibration_s5kgw1_p24c128e_sunny.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/awbWarmStartCamera_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_0.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/awbWarmStartCamera_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_1.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/awbWarmStartCamera_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_2.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/awbWarmStartCamera_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_3.txt \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/mapx.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/mapx.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/mapy.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/mapy.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/pdaf2D_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/pdaf2D_calibration_s5kgw1_p24c128e_sunny.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/pdafdcc_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/pdafdcc_calibration_s5kgw1_p24c128e_sunny.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/sony_imx471_cross_talk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/sony_imx471_cross_talk.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/sony_imx471_dpc_tbl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/sony_imx471_dpc_tbl.bin \
+    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/spc_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/spc_calibration_s5kgw1_p24c128e_sunny.bin \
     vendor/realme/sdm710-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/realme/sdm710-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/realme/sdm710-common/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
@@ -1056,28 +1063,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sdm710-common/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
     vendor/realme/sdm710-common/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 
-# Camera firmware
-PRODUCT_COPY_FILES += \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/aecWarmStartCamera_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_0.txt \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/aecWarmStartCamera_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_1.txt \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/aecWarmStartCamera_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_2.txt \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/aecWarmStartCamera_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_3.txt \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/af_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/af_calibration_s5kgw1_p24c128e_sunny.bin \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/awbWarmStartCamera_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_0.txt \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/awbWarmStartCamera_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_1.txt \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/awbWarmStartCamera_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_2.txt \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/awbWarmStartCamera_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_3.txt \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/mapx.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/mapx.bin \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/mapy.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/mapy.bin \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/pdaf2D_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/pdaf2D_calibration_s5kgw1_p24c128e_sunny.bin \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/pdafdcc_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/pdafdcc_calibration_s5kgw1_p24c128e_sunny.bin \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/sony_imx471_cross_talk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/sony_imx471_cross_talk.bin \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/sony_imx471_dpc_tbl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/sony_imx471_dpc_tbl.bin \
-    vendor/realme/sdm710-common/proprietary/vendor/etc/data/camera/spc_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/spc_calibration_s5kgw1_p24c128e_sunny.bin
-
 PRODUCT_PACKAGES += \
     libantradio \
-    libplatformconfig \
     vendor.qti.hardware.fm@1.0 \
     libqct_resampler \
     CneApp \
@@ -1091,7 +1078,16 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     QPerformance \
     UxPerformance \
+    tcmclient \
+    QtiTelephonyServicelibrary \
+    com.qualcomm.qti.imscmservice-V2.0-java \
+    com.qualcomm.qti.imscmservice-V2.1-java \
+    com.qualcomm.qti.imscmservice-V2.2-java \
     qcrilhook \
+    com.qti.dpmframework \
+    dpmapi \
+    vendor.qti.hardware.data.latency-V1.0-java \
+    vendor.qti.latency-V2.0-java \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti \
     vendor.qti.gnss@4.0-service

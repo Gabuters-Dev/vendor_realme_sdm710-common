@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),sdm710-common)
+ifneq ($(filter sdm710-common,$(TARGET_DEVICE)),)
 
 endif
